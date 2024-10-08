@@ -1,0 +1,98 @@
+
+body {
+  display:flex ;
+  flex-direction: column;
+  background-color: darkcyan;
+}
+.bignav {
+  display: flex;
+  justify-content: center;
+}
+.navbar {
+  background-color: darkslateblue;
+  border-left: solid darkslateblue 2%;
+  border-right: solid darkslateblue 2%;
+  border-top: solid darkslateblue 2%;
+  border-bottom: solid darkslateblue 2%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 60%;
+  align-self: center;
+  justify-content: space-between;
+}
+.buttons {
+  /*Holder for buttons */
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+}
+.topbar {
+  justify-content: top;
+}
+  .lrounded {
+    background-color: darkslateblue;
+    width: 5%;
+    border-top-left-radius: 50%;
+    border-bottom-left-radius: 50%;
+  }
+  .rrounded {
+    background-color: darkslateblue;
+    width: 5%;
+    border-top-right-radius: 50%;
+    border-bottom-right-radius: 50%;
+  }
+.button {
+  /*individual buttions*/
+  background-color: aquamarine;  
+  border: solid blueviolet .5lvh;
+  border-radius: 100%;
+  box-shadow: 0 0 12px -2px black;
+  padding: 10px;
+}
+.foot {
+  background-color: blue;
+
+  text-align: center;
+  box-shadow: 0 0 12px -2px black;
+  margin: 0 auto;
+  width: 80%;
+  margin-top: 50px;
+}
+a:link {
+  text-decoration: none;
+  color: blueviolet;
+}
+a:visited {
+  color: blueviolet;
+}
+.main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+section {
+  vertical-align: top;
+  
+
+}
+article {
+  background-color: rgb(7, 76, 155);
+  width: 80%;
+  align-self: center;
+}
+.content > p {
+  text-align: justify;
+  
+}
+section.content > img {
+  float: right;
+  width: 20%;
+  
+}
+a > img {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+}
