@@ -61,6 +61,7 @@ body {
   box-shadow: 0 0 12px -2px black;
   padding: 10px;
 }
+
 footer {
   background-color: blue;
   display: flex;
@@ -140,4 +141,15 @@ article.about > section {
   .hidden {
     display: none;
   }
+}
+form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+label {
+  text-align: left;
+  font-size: 20;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  color: aqua;
 }
