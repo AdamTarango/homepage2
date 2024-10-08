@@ -5,8 +5,12 @@ body {
   background-color: darkcyan;
 }
 .bignav {
-  display: flex;
-  justify-content: center;
+   display: flex;
+   position: fixed;
+   top: 0;
+   left: 0;
+   right: 0;
+   justify-content: center;
 }
 .navbar {
   background-color: darkslateblue;
@@ -27,21 +31,28 @@ body {
   width: 100%;
   justify-content: space-between;
 }
+.hidden {
+  background-color: aquamarine;  
+  border: solid blueviolet .5lvh;
+  border-radius: 100%;
+  box-shadow: 0 0 12px -2px black;
+  padding: 10px;
+}
 .topbar {
   justify-content: top;
 }
-  .lrounded {
-    background-color: darkslateblue;
-    width: 5%;
-    border-top-left-radius: 50%;
-    border-bottom-left-radius: 50%;
-  }
-  .rrounded {
-    background-color: darkslateblue;
-    width: 5%;
-    border-top-right-radius: 50%;
-    border-bottom-right-radius: 50%;
-  }
+.lrounded {
+  background-color: darkslateblue;
+  width: 5%;
+  border-top-left-radius: 50%;
+  border-bottom-left-radius: 50%;
+}
+.rrounded {
+  background-color: darkslateblue;
+  width: 5%;
+  border-top-right-radius: 50%;
+  border-bottom-right-radius: 50%;
+}
 .button {
   /*individual buttions*/
   background-color: aquamarine;  
@@ -50,14 +61,17 @@ body {
   box-shadow: 0 0 12px -2px black;
   padding: 10px;
 }
-.foot {
+footer {
   background-color: blue;
-
+  display: flex;
+  align-self: center;
+  flex-direction: column;
+  align-items: center;
   text-align: center;
   box-shadow: 0 0 12px -2px black;
-  margin: 0 auto;
+  position: fixed;
+  bottom: 0;
   width: 80%;
-  margin-top: 50px;
 }
 a:link {
   text-decoration: none;
@@ -78,21 +92,52 @@ section {
 
 }
 article {
+  display: flex;
   background-color: rgb(7, 76, 155);
   width: 80%;
   align-self: center;
+  margin-top: 100px;
+  margin-bottom: 200px;
 }
 .content > p {
   text-align: justify;
+  padding: 2%;
   
 }
-section.content > img {
+section > img {
   float: right;
   width: 20%;
+  padding: 1%;
   
 }
 a > img {
   width: 50px;
   height: 50px;
   border-radius: 50%;
+}
+
+.about {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+article.about > section {
+  border: solid;
+  border-color: antiquewhite;
+  border-width: 1px;
+  text-align: justify;
+
+}
+@media screen and (max-width: 580px) {
+  .button {
+    display: none;
+  }  
+
+}
+@media screen and (min-width: 581px) {
+  .hidden {
+    display: none;
+  }
 }
